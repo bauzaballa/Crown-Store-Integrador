@@ -618,6 +618,10 @@ footer .copyright p {
       -ms-flex-align: center;
           align-items: center;
   margin-top: .5rem;
+  font: 'Cuprum', sans-serif;
+  margin: 3px;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .mainform form .check input {
@@ -662,10 +666,6 @@ footer .copyright p {
 }
 
 .cartwindow {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,10 +675,122 @@ footer .copyright p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.cartwindow ul li div {
-  width: 5rem;
+.cartwindow ul {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cartwindow ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 0 .5rem 0;
+}
+
+.cartwindow ul li .product {
+  width: 3rem;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  margin-right: .5rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow ul li .product {
+    width: 7rem;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    margin-right: 1rem;
+  }
+}
+
+.cartwindow ul li span {
+  font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow ul li span {
+    font-size: 1.1rem;
+  }
+}
+
+.cartwindow ul li .gem {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow ul li .gem {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.cartwindow ul li:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
+.cartwindow ul li:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+
+.cartwindow div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartwindow div span {
+  font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow div span {
+    font-size: 1.5rem;
+  }
+}
+
+.cartwindow div div {
+  width: 1rem;
+  height: 1rem;
+  margin-left: .5rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow div div {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.cartwindow button {
+  padding: .1rem .2rem .1rem .2rem;
+  font-size: .7rem;
+  background-color: #96806c;
+  border-radius: .2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cartwindow button {
+    font-size: 1rem;
+  }
 }

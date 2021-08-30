@@ -464,6 +464,10 @@ footer{
             justify-content: space-around;
             align-items: center;
             margin-top: .5rem;
+            font: 'Cuprum', sans-serif;
+            margin: 3px;
+            font-weight: lighter;
+            font-style: italic;
 
             input{
                 margin-right: .5rem;
@@ -506,21 +510,99 @@ footer{
 //Cart
 
 .cartwindow{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
 
     ul{
+        margin-top: 3rem;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+
         li{
-            div{
-                width: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:  .5rem 0 .5rem 0;
+
+            .product{
+                width: 3rem;
+                border-bottom: 1px solid white;
+                border-left: 1px solid white;
+                margin-right: .5rem;
+
+                @media(min-width: 768px){
+                    width: 7rem;
+                    border-bottom: 2px solid white;
+                    border-left: 2px solid white;
+                    margin-right: 1rem;
+                }
             }
+
+            span{
+                font-size: .8rem;
+
+                @media(min-width: 768px){
+                    font-size: 1.1rem;
+                }
+            }
+
+            .gem{
+                width: 1rem;
+                height: 1rem;
+
+                @media(min-width: 768px){
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+        li:nth-child(1){
+            border-bottom: 1px solid white;
+        }
+
+        li:nth-child(2){
+            border-bottom: 1px solid white;
+        }
+    }
+
+    div{
+        display: flex;
+
+        span{
+            font-size: .8rem;
+
+            @media(min-width: 768px){
+                font-size: 1.5rem;
+            }
+        }
+
+        div{
+            width: 1rem;
+            height: 1rem;
+            margin-left: .5rem;
+
+            @media(min-width: 768px){
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    button{
+        padding: .1rem .2rem .1rem .2rem;
+        font-size: .7rem;
+        background-color: #96806c;
+        border-radius: .2rem;
+        margin-top: 1rem;
+
+        @media(min-width: 768px){
+            font-size: 1rem;
         }
     }
 }
